@@ -4,5 +4,5 @@ Feature: login page and find menu sale
     
 Scenario: login page and click menu Sales & Marketing Request
     Given find menu sale and creat request
-    When input "hunnq" and pass "123456" 
+    When input "hungnq" and pass "123456" 
     Then screen "Create New Request" is display
