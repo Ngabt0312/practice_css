@@ -5,8 +5,7 @@ end
 
 When('input {string} and pass {string}') do |string, string2|
   $driver.find_element(:id, 'txtUserID').send_keys(string)
-  $driver.find_element(:id, 'txtUserPass').send_keys(string2)
-  $driver.find_element(:id, 'lnkLogin').click
+  $driver.find_element(:id, 'txtUserPass').send_keys string2, :enter
   $driver.manage.window.full_screen
   $driver.find_element(:css, '.main-navigation-menu > li:nth-child(2) .title').click
   $driver.find_element(:link_text, 'Create New Request').click
